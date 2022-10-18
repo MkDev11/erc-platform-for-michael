@@ -1,0 +1,11 @@
+.testimonials {
+  @apply py-14;
+
+  .react-multiple-carousel__arrow--left {
+    left: 0 !important;
+  }
+
+  .react-multiple-carousel__arrow--right {
+    right: 0 !important;
+  }
+}

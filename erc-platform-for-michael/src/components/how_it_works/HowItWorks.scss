@@ -1,0 +1,22 @@
+.how-it-works {
+  @apply pt-8 md:pt-14;
+
+  .video-box {
+    box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+    animation-timing-function: linear;
+    @apply relative mt-14 align-baseline bg-transparent duration-200 bg-cover bg-center bg-no-repeat mx-auto rounded;
+
+    iframe {
+      @apply absolute top-0 left-0 w-full h-full max-w-full;
+    }
+
+    .player-wrapper {
+      position: relative;
+      padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+    }
+
+    .react-player {
+      @apply absolute top-0 left-0;
+    }
+  }
+}

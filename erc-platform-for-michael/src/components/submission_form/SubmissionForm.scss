@@ -1,0 +1,117 @@
+.submission-form {
+  background-image: url(https://ercblc.com/wp-content/uploads/2022/08/help-ERC-scaled.jpeg);
+  background-color: #bedf8f;
+  @apply relative bg-center bg-cover p-14;
+
+  .overlay {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #006534 30%, #7fc241 70%);
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    @apply absolute top-0 left-0 opacity-80 w-full h-full;
+  }
+
+  p {
+    color: #bf1650;
+  }
+
+  p::before {
+    display: inline;
+    content: "⚠ ";
+  }
+
+  input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #c3cad8bf;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  label {
+    line-height: 2;
+    text-align: left;
+    display: block;
+    margin-bottom: 13px;
+    margin-top: 20px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 200;
+    font-weight: 600;
+  }
+
+  select {
+    width: 100%;
+    border: 1px solid #c3cad8bf;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  button[type="submit"],
+  input[type="submit"] {
+    background: #18bd5b;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 10px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover,
+  input[type="submit"]:hover {
+    background: #149c4a;
+  }
+
+  button[type="submit"]:active,
+  input[type="button"]:active,
+  input[type="submit"]:active {
+    transition: 0.3s all;
+    transform: translateY(3px);
+    border: 1px solid transparent;
+    opacity: 0.8;
+  }
+
+  input:disabled {
+    opacity: 0.4;
+  }
+
+  input[type="button"]:hover {
+    transition: 0.3s all;
+  }
+
+  button[type="submit"],
+  input[type="button"],
+  input[type="submit"] {
+    -webkit-appearance: none;
+  }
+
+  button[type="button"] {
+    display: block;
+    appearance: none;
+    background: #18bd5b;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+
+  button {
+    display: block;
+    appearance: none;
+    margin-top: 40px;
+    border: 1px solid #18bd5b;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

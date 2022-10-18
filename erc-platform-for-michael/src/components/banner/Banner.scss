@@ -1,0 +1,14 @@
+.banner-divider {
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1MHB4IiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTMyMCAyOGMzMjAgMCAzMjAgODQgNjQwIDg0IDE2MCAwIDI0MC0yMSAzMjAtNDJ2NzBIMFY3MGM4MC0yMSAxNjAtNDIgMzIwLTQyeiIvPjwvZz48L3N2Zz4=);
+  background-size: 100% 50px;
+  height: 50px;
+  z-index: 1;
+  transform: scale(1, 1);
+}

@@ -1,0 +1,7 @@
+.faq-section {
+    @apply py-14;
+
+    ul:not(.accordion) {
+        @apply pl-6 list-disc;
+    }
+}
