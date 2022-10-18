@@ -11,7 +11,7 @@ const AppRoutes = () => {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/client" element={<Client />} />
+        <Route path="/client_0ahUKEwjNs_yh2Or6AhUkposKHWzVCu0Q4dUDCA8" element={<Client />} />
         <Route path="*" element={<Error />} />
         <Route component={Error} />
         
