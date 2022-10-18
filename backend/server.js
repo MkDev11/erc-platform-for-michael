@@ -21,7 +21,7 @@ const __dirname = path.resolve();
 
 if (process.env.NODE_ENV === "production") {
   app.use(
-    express.static(path.join(__dirname, "/frontend"))
+    express.static(path.join(__dirname, "/frontend/build"))
   );
 
   app.get("*", (req, res) =>
