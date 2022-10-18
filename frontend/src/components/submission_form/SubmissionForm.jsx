@@ -1,4 +1,4 @@
-import { useState, useEffect, forwardRef } from "react";
+import { forwardRef } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import axios from "axios";
@@ -43,7 +43,7 @@ const LegalBusinessName = ({ id, label, register, required }) => (
 const NumberOfW2 = ({ id, label, register, required }) => (
   <>
     <label>{label}</label>
-    <input {...register(id, { required })} placeholder="" />
+    <input {...register(id, { required })} placeholder="e.g. 23 (greater than 4)" />
   </>
 );
 
@@ -147,7 +147,7 @@ const SubmissionForm = () => {
       },
     };
 
-    const res = await axios.post("http://localhost:5000/api/users/register", data, config);
+    const res = await axios.post("/api/users/register", data, config);
     console.log(res);
     if (res.data.result === 0) toast.error("Your info has been already submitted.");
     else if (res.data.result === 1)

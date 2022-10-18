@@ -1,12 +1,12 @@
 {
   "users": [
     {
-      "firstName": "Jane",
+      "firstName": "Jay",
       "lastName": "Smith",
-      "email": "jane@smith.com",
+      "email": "jaysmth689@gmail.com",
       "phoneNumber": "123-456-7890",
-      "legalBusinessName": "Jane Smith",
-      "numberOfW2": "345",
+      "legalBusinessName": "Jay Smith",
+      "numberOfW2": "35",
       "industry": "Bank"
     }
   ]

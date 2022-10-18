@@ -52,7 +52,7 @@ const registerUser = asyncHandler(async (req, res) => {
   res.status(201).json({ result: 1 });
 });
 
-const getUser = asyncHandler(async (req, res) => {
+const getRecord = asyncHandler(async (req, res) => {
   await db.read();
 
   db.data ||= { users: [] };
@@ -62,4 +62,4 @@ const getUser = asyncHandler(async (req, res) => {
   res.json(users);
 });
 
-export { registerUser, getUser };
+export { registerUser, getRecord };

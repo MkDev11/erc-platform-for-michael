@@ -1,0 +1,21 @@
+@media (min-width: 640px) {
+  table {
+    display: inline-table !important;
+  }
+
+  thead tr:not(:first-child) {
+    display: none;
+  }
+}
+
+td:not(:last-child) {
+  //   border-bottom: 0;
+  border-bottom: 1px solid #c8ccd2;
+  border-right: 1px solid #c8ccd2;
+}
+
+th:not(:last-child) {
+  //   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #c8ccd2;
+  border-right: 1px solid #c8ccd2;
+}
