@@ -1,10 +1,11 @@
-import { join, dirname } from "path";
+import path from "path";
 import { Low, JSONFile } from "lowdb";
 import { fileURLToPath } from "url";
 import asyncHandler from "express-async-handler";
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const file = join(__dirname, "data/db.json");
+const __dirname = path.resolve();
+
+const file = path.join(__dirname, "/backend/data/db.json");
 const adapter = new JSONFile(file);
 const db = new Low(adapter);
 
@@ -21,9 +22,21 @@ const registerUser = asyncHandler(async (req, res) => {
 
   await db.read();
 
-  db.data ||= { users: [] };
+  db.data = db.data || { users: [] };
 
   const { users } = db.data;
+  let okay = true;
+
+  for (let i = 0; i < users.length; i++) {
+    Object.keys(users[i]).forEach((key) => {
+      if (users[i][key] != req.body[key]) okay = false;
+    });
+    if (okay == true) {
+      res.status(201).json({ result: 0 });
+      return;
+    }
+  }
+
   users.push({
     firstName: firstName,
     lastName: lastName,
@@ -35,6 +48,8 @@ const registerUser = asyncHandler(async (req, res) => {
   });
 
   await db.write();
+
+  res.status(201).json({ result: 1 });
 });
 
 const getUser = asyncHandler(async (req, res) => {

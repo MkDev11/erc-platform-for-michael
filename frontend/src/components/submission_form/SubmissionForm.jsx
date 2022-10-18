@@ -139,7 +139,6 @@ const SubmissionForm = () => {
   } = useForm();
 
   const onSubmit = async (data) => {
-    console.log(data);
     // window.location.href =
     //   "https://bottomlinesavings.referralrock.com/l/MICHAELKORN/";
     const config = {
@@ -148,9 +147,11 @@ const SubmissionForm = () => {
       },
     };
 
-    const { response } = await axios.post("/api/users", data, config);
-
-    toast.info("Your information has been successfully submitted.");
+    const res = await axios.post("http://localhost:5000/api/users/register", data, config);
+    console.log(res);
+    if (res.data.result === 0) toast.error("Your info has been already submitted.");
+    else if (res.data.result === 1)
+      toast.info("Your info has been successfully submitted.");
   };
 
   return (

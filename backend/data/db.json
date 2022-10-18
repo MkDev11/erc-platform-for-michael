@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "jane@smith.com",
+      "phoneNumber": "123-456-7890",
+      "legalBusinessName": "Jane Smith",
+      "numberOfW2": "345",
+      "industry": "Bank"
+    }
+  ]
+}
