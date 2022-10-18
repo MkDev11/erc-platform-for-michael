@@ -28,9 +28,9 @@ const registerUser = asyncHandler(async (req, res) => {
   let okay = true;
 
   for (let i = 0; i < users.length; i++) {
-    Object.keys(users[i]).forEach((key) => {
+    for (let key of Object.keys(users[i])) {
       if (users[i][key] != req.body[key]) okay = false;
-    });
+    }
     if (okay == true) {
       res.status(201).json({ result: 0 });
       return;
