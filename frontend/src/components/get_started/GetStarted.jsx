@@ -27,7 +27,7 @@ const GetStarted = () => {
             <div className="mb-0 text-center transition-transform duration-300 relative">
               <a
                 className="px-10 py-3 inline-block transition-all ease-out duration-300 text-xl font-medium bg-center bg-cover border-none rounded-sm decoration-0 bg-white text-[#555] hover:bg-[#2f3436] hover:text-white"
-                href="#get-started"
+                href="#submissionForm"
               >
                 <i className="far fa-check-square mr-2" />
                 SCHEDULE A CALL

@@ -161,7 +161,7 @@ const SubmissionForm = () => {
   };
 
   return (
-    <div className="submission-form">
+    <div id="submissionForm" className="submission-form">
       <div className="overlay" />
       <div className="relative bg-white max-w-6xl mx-auto">
         <div className="px-12 py-10 max-w-[586px] w-full mx-auto">

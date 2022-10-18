@@ -41,7 +41,7 @@ const Banner = () => {
           <div className="mb-0 text-center transition-transform duration-300 relative">
             <a
               className="px-10 py-3 inline-block transition-all ease-out duration-300 text-xl font-medium bg-center bg-cover border-none rounded-sm decoration-0 bg-[#7fc241] text-white hover:bg-[#2f3436]"
-              href="#get-started"
+              href="#submissionForm"
             >
                 <i className="far fa-check-square mr-2" />
               GET QUALIFIED
