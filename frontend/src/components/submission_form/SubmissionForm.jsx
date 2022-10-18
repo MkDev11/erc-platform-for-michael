@@ -141,6 +141,12 @@ const SubmissionForm = () => {
   const onSubmit = async (data) => {
     // window.location.href =
     //   "https://bottomlinesavings.referralrock.com/l/MICHAELKORN/";
+
+    if (data.numberOfW2 < 5 ) {
+      toast.error("Please input the number greater than 4.");
+      return;
+    }
+
     const config = {
       headers: {
         "Content-Type": "application/json",
